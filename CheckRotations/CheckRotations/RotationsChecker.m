@@ -32,7 +32,7 @@ static const NSTimeInterval deviceMotionMin = 0.01;
         [mManager setDeviceMotionUpdateInterval:updateInterval];
         [mManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMDeviceMotion *deviceMotion, NSError *error) {
           
-                if(fabs(deviceMotion.gravity.x) < 0.95 || fabs(deviceMotion.attitude.roll) > 1.6) {
+                if(fabs(deviceMotion.rotationRate.y) > 0.2) {
                     [self setTimer];
                 }
                 else {
@@ -78,7 +78,7 @@ static const NSTimeInterval deviceMotionMin = 0.01;
         }];
     }];
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:5.0
+    _timer = [NSTimer scheduledTimerWithTimeInterval:8.0
                                                       target:self
                                                     selector:@selector(cancelTimer)
                                                     userInfo:nil
