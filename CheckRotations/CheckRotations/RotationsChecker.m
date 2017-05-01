@@ -99,7 +99,7 @@ static const NSTimeInterval deviceMotionMin = 0.01;
         NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"pain" ofType: @"m4a"];
         NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath ];
         self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-        self.audioPlayer.numberOfLoops = 0; 
+        self.audioPlayer.numberOfLoops = 0;
         [self.audioPlayer play];
         
     });
