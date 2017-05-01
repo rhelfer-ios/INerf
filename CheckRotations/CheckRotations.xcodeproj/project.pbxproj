@@ -13,6 +13,9 @@
 		68ACAFBD1EB5CC2A00075E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68ACAFBC1EB5CC2A00075E0F /* Assets.xcassets */; };
 		68ACAFC01EB5CC2A00075E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68ACAFBE1EB5CC2A00075E0F /* LaunchScreen.storyboard */; };
 		68ACAFC81EB5CD8400075E0F /* RotationsChecker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68ACAFC71EB5CD8400075E0F /* RotationsChecker.xib */; };
+		68ACAFCA1EB5D0EB00075E0F /* dragonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 68ACAFC91EB5D0EB00075E0F /* dragonImage.png */; };
+		68FC44C31EB71F90009A974C /* pain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68FC44C11EB71C54009A974C /* pain.m4a */; };
+		68FC44C41EB71F90009A974C /* Threat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68FC44C21EB71C5B009A974C /* Threat.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		68ACAFBF1EB5CC2A00075E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68ACAFC11EB5CC2A00075E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68ACAFC71EB5CD8400075E0F /* RotationsChecker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotationsChecker.xib; sourceTree = "<group>"; };
+		68ACAFC91EB5D0EB00075E0F /* dragonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dragonImage.png; sourceTree = "<group>"; };
+		68FC44C11EB71C54009A974C /* pain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pain.m4a; sourceTree = "<group>"; };
+		68FC44C21EB71C5B009A974C /* Threat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Threat.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,10 @@
 				68ACAFB61EB5CC2A00075E0F /* RotationsChecker.h */,
 				68ACAFB71EB5CC2A00075E0F /* RotationsChecker.m */,
 				68ACAFC71EB5CD8400075E0F /* RotationsChecker.xib */,
+				68ACAFC91EB5D0EB00075E0F /* dragonImage.png */,
 				68ACAFBC1EB5CC2A00075E0F /* Assets.xcassets */,
+				68FC44C11EB71C54009A974C /* pain.m4a */,
+				68FC44C21EB71C5B009A974C /* Threat.m4a */,
 				68ACAFBE1EB5CC2A00075E0F /* LaunchScreen.storyboard */,
 				68ACAFC11EB5CC2A00075E0F /* Info.plist */,
 				68ACAFB01EB5CC2A00075E0F /* Supporting Files */,
@@ -138,6 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FC44C31EB71F90009A974C /* pain.m4a in Resources */,
+				68FC44C41EB71F90009A974C /* Threat.m4a in Resources */,
+				68ACAFCA1EB5D0EB00075E0F /* dragonImage.png in Resources */,
 				68ACAFC01EB5CC2A00075E0F /* LaunchScreen.storyboard in Resources */,
 				68ACAFC81EB5CD8400075E0F /* RotationsChecker.xib in Resources */,
 				68ACAFBD1EB5CC2A00075E0F /* Assets.xcassets in Resources */,
@@ -269,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QZ9H8ES7U9;
 				INFOPLIST_FILE = CheckRotations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ran-Helfer.CheckRotations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QZ9H8ES7U9;
 				INFOPLIST_FILE = CheckRotations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ran-Helfer.CheckRotations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +320,7 @@
 				68ACAFC61EB5CC2A00075E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

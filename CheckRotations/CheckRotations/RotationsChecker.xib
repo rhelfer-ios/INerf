@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,15 +11,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RotationsChecker">
             <connections>
+                <outlet property="dragonImage" destination="rz2-Ks-VLl" id="h46-gh-1xw"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cui-Z0-3aP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dragonImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="rz2-Ks-VLl">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-242" y="41"/>
+            <constraints>
+                <constraint firstItem="rz2-Ks-VLl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8lm-d8-Vaw"/>
+                <constraint firstItem="rz2-Ks-VLl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F9d-Ht-jx1"/>
+                <constraint firstItem="rz2-Ks-VLl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GeY-T3-okH"/>
+                <constraint firstAttribute="bottom" secondItem="rz2-Ks-VLl" secondAttribute="bottom" id="KEt-3C-J5G"/>
+                <constraint firstItem="rz2-Ks-VLl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eaX-5O-8pF"/>
+                <constraint firstAttribute="trailing" secondItem="rz2-Ks-VLl" secondAttribute="trailing" id="nrb-5P-3aW"/>
+            </constraints>
+            <point key="canvasLocation" x="-242.5" y="40.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="dragonImage.png" width="640" height="480"/>
+    </resources>
 </document>
